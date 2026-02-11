@@ -3,18 +3,18 @@ import { Facebook, Twitter, Linkedin } from 'lucide-react';
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-[#3a4a3b]">
-      <div className="max-w-[1400px] mx-auto px-8">
+    <section id="about" className="py-12 md:py-16 lg:py-20 bg-[#3a4a3b]">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8">
         <h2 
-          className="text-5xl font-serif text-center text-[#f5f3ed] mb-16"
+          className="text-3xl md:text-4xl lg:text-5xl font-serif text-center text-[#f5f3ed] mb-8 md:mb-12 lg:mb-16"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
           About
         </h2>
         
-        <div className="grid grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-12">
           <div>
-            <h3 className="text-xl font-serif text-[#d17d47] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h3 className="text-lg md:text-xl font-serif text-[#d17d47] mb-3 md:mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
               Our Mission
             </h3>
             <p className="text-[#c5c2b5] leading-relaxed text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -23,7 +23,7 @@ export function AboutSection() {
           </div>
           
           <div>
-            <h3 className="text-xl font-serif text-[#d17d47] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h3 className="text-lg md:text-xl font-serif text-[#d17d47] mb-3 md:mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
               What We Offer
             </h3>
             <ul className="text-[#c5c2b5] text-sm space-y-2" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -35,7 +35,7 @@ export function AboutSection() {
           </div>
           
           <div>
-            <h3 className="text-xl font-serif text-[#d17d47] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h3 className="text-lg md:text-xl font-serif text-[#d17d47] mb-3 md:mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
               Quick Links
             </h3>
             <ul className="text-[#c5c2b5] text-sm space-y-2" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -47,13 +47,13 @@ export function AboutSection() {
           </div>
           
           <div>
-            <h3 className="text-xl font-serif text-[#d17d47] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h3 className="text-lg md:text-xl font-serif text-[#d17d47] mb-3 md:mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
               Connect
             </h3>
             <div className="flex gap-4 mb-4">
-              <Facebook className="w-6 h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" />
-              <Twitter className="w-6 h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" />
-              <Linkedin className="w-6 h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" />
+              <Facebook className="w-5 h-5 md:w-6 md:h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" />
+              <Twitter className="w-5 h-5 md:w-6 md:h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" />
+              <Linkedin className="w-5 h-5 md:w-6 md:h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" />
             </div>
             <p className="text-[#c5c2b5] text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
               Follow us for daily tips and insights
@@ -61,7 +61,7 @@ export function AboutSection() {
           </div>
         </div>
         
-        <div className="border-t border-[#4a5a4b] pt-8 text-center">
+        <div className="border-t border-[#4a5a4b] pt-6 md:pt-8 text-center">
           <p className="text-[#8a9a8b] text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
             © 2026 Jobhunter07. All rights reserved.
           </p>

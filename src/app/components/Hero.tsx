@@ -2,13 +2,13 @@ import React from 'react';
 
 export function Hero() {
   return (
-    <section id="home" className="relative h-[700px] flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-[500px] md:h-[600px] lg:h-[700px] flex items-center justify-center overflow-hidden">
       {/* Background Image - Cinematic Forest with Trail */}
       <div className="absolute inset-0">
         <img 
           src="https://images.unsplash.com/photo-1765967879516-48f74b737536?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb3Jlc3QlMjB0cmFpbCUyMHBhdGglMjBwaW5lJTIwdHJlZXMlMjBtaXN0fGVufDF8fHx8MTc3MDc2NzUwNnww&ixlib=rb-4.1.0&q=80&w=1080" 
           alt="Forest trail with mist"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
         {/* Subtle overlay to enhance text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#2a3a2b]/30 via-transparent to-[#3a4a3b]/60" />
@@ -16,7 +16,7 @@ export function Hero() {
         {/* Trail Overlay with Footprints */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="absolute top-1/4 opacity-30">
-            <svg width="200" height="400" viewBox="0 0 200 400" className="text-[#3a4a3b]">
+            <svg width="150" height="300" viewBox="0 0 200 400" className="text-[#3a4a3b] md:w-[200px] md:h-[400px]">
               {/* Deer footprints */}
               <ellipse cx="90" cy="80" rx="8" ry="12" fill="currentColor" opacity="0.4" />
               <ellipse cx="95" cy="95" rx="7" ry="11" fill="currentColor" opacity="0.4" />
@@ -33,10 +33,10 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-8 pt-20">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 md:px-6 lg:px-8 pt-16 md:pt-20">
         {/* Decorative Vintage Compass - Large and Centered */}
-        <div className="mb-12 flex justify-center">
-          <svg width="120" height="120" viewBox="0 0 120 120" className="opacity-80 drop-shadow-2xl">
+        <div className="mb-8 md:mb-12 flex justify-center">
+          <svg width="80" height="80" viewBox="0 0 120 120" className="opacity-80 drop-shadow-2xl md:w-[100px] md:h-[100px] lg:w-[120px] lg:h-[120px]">
             {/* Outer circle */}
             <circle cx="60" cy="60" r="55" stroke="#f5f3ed" strokeWidth="2" fill="none" opacity="0.6" />
             <circle cx="60" cy="60" r="50" stroke="#d17d47" strokeWidth="1.5" fill="none" opacity="0.8" />
@@ -63,7 +63,7 @@ export function Hero() {
         </div>
         
         <h1 
-          className="text-7xl font-serif text-[#f5f3ed] mb-6 tracking-wide drop-shadow-2xl"
+          className="text-3xl md:text-5xl lg:text-7xl font-serif text-[#f5f3ed] mb-4 md:mb-6 tracking-wide drop-shadow-2xl"
           style={{ 
             fontFamily: 'Playfair Display, serif', 
             letterSpacing: '0.05em',
@@ -73,7 +73,7 @@ export function Hero() {
           LAND YOUR DREAM JOB
         </h1>
         <p 
-          className="text-2xl text-[#f5f3ed] mb-12 tracking-widest drop-shadow-lg"
+          className="text-sm md:text-xl lg:text-2xl text-[#f5f3ed] mb-8 md:mb-12 tracking-widest drop-shadow-lg"
           style={{ 
             fontFamily: 'Source Serif 4, serif', 
             letterSpacing: '0.15em',
@@ -83,7 +83,7 @@ export function Hero() {
           TRACK THE PATH TO SUCCESS
         </p>
         <button 
-          className="bg-[#d17d47] hover:bg-[#b66a38] text-white px-12 py-4 rounded-md text-lg font-semibold transition-all duration-300 shadow-2xl hover:shadow-xl transform hover:-translate-y-1"
+          className="bg-[#d17d47] hover:bg-[#b66a38] text-white px-8 md:px-10 lg:px-12 py-3 md:py-4 rounded-md text-base md:text-lg font-semibold transition-all duration-300 shadow-2xl hover:shadow-xl transform hover:-translate-y-1"
           style={{ fontFamily: 'Inter, sans-serif' }}
         >
           EXPLORE NOW
@@ -91,7 +91,7 @@ export function Hero() {
       </div>
 
       {/* Torn Paper Edge */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-[#6a7a6b]">
+      <div className="absolute bottom-0 left-0 right-0 h-12 md:h-16 bg-[#6a7a6b]">
         <svg className="w-full h-full" viewBox="0 0 1440 60" preserveAspectRatio="none">
           <path 
             d="M0,20 Q120,35 240,25 T480,30 Q600,20 720,35 T960,25 Q1080,40 1200,30 T1440,25 L1440,60 L0,60 Z" 

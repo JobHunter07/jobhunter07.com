@@ -9,7 +9,7 @@ import { ContactSection } from './components/ContactSection';
 
 export default function App() {
   return (
-    <div className="min-w-[1440px] bg-[#f5f3ed]">
+    <div className="bg-[#f5f3ed]">
       <Header />
       <Hero />
       <ToolsSection />

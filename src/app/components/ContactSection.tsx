@@ -16,7 +16,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-[#5a6a5b] relative overflow-hidden">
+    <section id="contact" className="py-12 md:py-16 lg:py-20 bg-[#5a6a5b] relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute inset-0 opacity-10">
         <img 
@@ -26,21 +26,21 @@ export function ContactSection() {
         />
       </div>
 
-      <div className="relative max-w-[1400px] mx-auto px-8">
+      <div className="relative max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8">
         <h2 
-          className="text-5xl font-serif text-center text-[#f5f3ed] mb-16"
+          className="text-3xl md:text-4xl lg:text-5xl font-serif text-center text-[#f5f3ed] mb-8 md:mb-12 lg:mb-16"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
           Contact
         </h2>
         
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
           {/* Form */}
-          <div className="bg-[#e8e5d9] p-12 rounded-lg shadow-2xl">
-            <h3 className="text-2xl font-serif text-[#3a4a3b] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <div className="bg-[#e8e5d9] p-6 md:p-10 lg:p-12 rounded-lg shadow-2xl">
+            <h3 className="text-xl md:text-2xl font-serif text-[#3a4a3b] mb-4 md:mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
               Get in Touch
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
               <div>
                 <label 
                   htmlFor="name" 
@@ -100,7 +100,7 @@ export function ContactSection() {
               
               <button 
                 type="submit"
-                className="w-full bg-[#d17d47] hover:bg-[#b66a38] text-white px-8 py-4 rounded-md font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="w-full bg-[#d17d47] hover:bg-[#b66a38] text-white px-6 md:px-8 py-3 md:py-4 rounded-md font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 style={{ fontFamily: 'Inter, sans-serif' }}
               >
                 SEND MESSAGE
@@ -109,51 +109,51 @@ export function ContactSection() {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-8">
-            <div className="bg-[#e8e5d9] p-8 rounded-lg shadow-lg">
-              <div className="flex items-start gap-4 mb-6">
-                <MapPin className="w-6 h-6 text-[#d17d47] mt-1" />
+          <div className="space-y-6 md:space-y-8">
+            <div className="bg-[#e8e5d9] p-6 md:p-8 rounded-lg shadow-lg">
+              <div className="flex items-start gap-4 mb-4 md:mb-6">
+                <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#d17d47] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="text-xl font-serif text-[#3a4a3b] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  <h4 className="text-lg md:text-xl font-serif text-[#3a4a3b] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
                     Location
                   </h4>
-                  <p className="text-[#5a6a5b]" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <p className="text-[#5a6a5b] text-sm md:text-base" style={{ fontFamily: 'Inter, sans-serif' }}>
                     123 Explorer Lane<br />
                     San Francisco, CA 94102
                   </p>
                 </div>
               </div>
               
-              <div className="flex items-start gap-4 mb-6">
-                <Mail className="w-6 h-6 text-[#d17d47] mt-1" />
+              <div className="flex items-start gap-4 mb-4 md:mb-6">
+                <Mail className="w-5 h-5 md:w-6 md:h-6 text-[#d17d47] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="text-xl font-serif text-[#3a4a3b] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  <h4 className="text-lg md:text-xl font-serif text-[#3a4a3b] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
                     Email
                   </h4>
-                  <p className="text-[#5a6a5b]" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <p className="text-[#5a6a5b] text-sm md:text-base" style={{ fontFamily: 'Inter, sans-serif' }}>
                     hello@jobhunter07.com
                   </p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-[#d17d47] mt-1" />
+                <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#d17d47] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="text-xl font-serif text-[#3a4a3b] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  <h4 className="text-lg md:text-xl font-serif text-[#3a4a3b] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
                     Phone
                   </h4>
-                  <p className="text-[#5a6a5b]" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <p className="text-[#5a6a5b] text-sm md:text-base" style={{ fontFamily: 'Inter, sans-serif' }}>
                     +1 (555) 123-4567
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#e8e5d9] p-8 rounded-lg shadow-lg">
-              <h4 className="text-xl font-serif text-[#3a4a3b] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <div className="bg-[#e8e5d9] p-6 md:p-8 rounded-lg shadow-lg">
+              <h4 className="text-lg md:text-xl font-serif text-[#3a4a3b] mb-3 md:mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Office Hours
               </h4>
-              <div className="space-y-2 text-[#5a6a5b]" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <div className="space-y-2 text-[#5a6a5b] text-sm md:text-base" style={{ fontFamily: 'Inter, sans-serif' }}>
                 <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                 <p>Saturday: 10:00 AM - 4:00 PM</p>
                 <p>Sunday: Closed</p>

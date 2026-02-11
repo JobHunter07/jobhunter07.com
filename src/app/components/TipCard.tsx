@@ -16,11 +16,11 @@ export function TipCard({ image, title, description }: TipCardProps) {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="p-8">
-        <h3 className="text-3xl font-serif text-[#3a4a3b] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+      <div className="p-6 md:p-8">
+        <h3 className="text-2xl md:text-3xl font-serif text-[#3a4a3b] mb-3 md:mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
           {title}
         </h3>
-        <p className="text-[#5a6a5b] leading-relaxed" style={{ fontFamily: 'Source Serif 4, serif' }}>
+        <p className="text-sm md:text-base text-[#5a6a5b] leading-relaxed" style={{ fontFamily: 'Source Serif 4, serif' }}>
           {description}
         </p>
       </div>

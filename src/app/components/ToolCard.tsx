@@ -16,11 +16,11 @@ export function ToolCard({ image, title, description }: ToolCardProps) {
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
         />
       </div>
-      <div className="p-6">
-        <h3 className="text-2xl font-serif text-[#3a4a3b] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+      <div className="p-4 md:p-6">
+        <h3 className="text-xl md:text-2xl font-serif text-[#3a4a3b] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
           {title}
         </h3>
-        <p className="text-[#5a6a5b] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
+        <p className="text-sm md:text-base text-[#5a6a5b] leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
           {description}
         </p>
       </div>
