@@ -16,7 +16,6 @@ export default function HomePage() {
       <HuntTipsSection />
       <FounderStorySection />
       <AboutSection />
-      <ContactSection />
     </div>
   );
 }
