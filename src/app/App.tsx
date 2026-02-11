@@ -1,22 +1,6 @@
-import React from 'react';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { ToolsSection } from './components/ToolsSection';
-import { HuntTipsSection } from './components/HuntTipsSection';
-import { FounderStorySection } from './components/FounderStorySection';
-import { AboutSection } from './components/AboutSection';
-import { ContactSection } from './components/ContactSection';
+import { RouterProvider } from 'react-router';
+import { router } from './routes';
 
 export default function App() {
-  return (
-    <div className="bg-[#f5f3ed]">
-      <Header />
-      <Hero />
-      <ToolsSection />
-      <HuntTipsSection />
-      <FounderStorySection />
-      <AboutSection />
-      <ContactSection />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }

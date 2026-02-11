@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 interface ToolCardProps {
   image: string;
   title: string;
   description: string;
+  link: string;
 }
 
-export function ToolCard({ image, title, description }: ToolCardProps) {
+export function ToolCard({ image, title, description, link }: ToolCardProps) {
   return (
-    <div className="bg-[#e8e5d9] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <Link to={link} className="block bg-[#e8e5d9] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
       <div className="aspect-[4/3] overflow-hidden">
         <img 
           src={image} 
@@ -24,6 +26,6 @@ export function ToolCard({ image, title, description }: ToolCardProps) {
           {description}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }

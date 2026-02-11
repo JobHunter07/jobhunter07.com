@@ -82,12 +82,13 @@ export function Hero() {
         >
           TRACK THE PATH TO SUCCESS
         </p>
-        <button 
-          className="bg-[#d17d47] hover:bg-[#b66a38] text-white px-8 md:px-10 lg:px-12 py-3 md:py-4 rounded-md text-base md:text-lg font-semibold transition-all duration-300 shadow-2xl hover:shadow-xl transform hover:-translate-y-1"
+        <a 
+          href="https://app.jobhunter07.com"
+          className="inline-block bg-[#d17d47] hover:bg-[#b66a38] text-white px-8 md:px-10 lg:px-12 py-3 md:py-4 rounded-md text-base md:text-lg font-semibold transition-all duration-300 shadow-2xl hover:shadow-xl transform hover:-translate-y-1"
           style={{ fontFamily: 'Inter, sans-serif' }}
         >
           EXPLORE NOW
-        </button>
+        </a>
       </div>
 
       {/* Torn Paper Edge */}
