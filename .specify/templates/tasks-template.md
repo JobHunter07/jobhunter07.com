@@ -95,6 +95,12 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] T016 [US1] Add validation and error handling
 - [ ] T017 [US1] Add logging for user story 1 operations
 
+**📚 Component Documentation (REQUIRED for React/UI components)**:
+- [ ] T018 [P] [US1] Create Storybook story for [Component1] in src/[path]/[Component1].stories.tsx
+- [ ] T019 [P] [US1] Create Storybook story for [Component2] in src/[path]/[Component2].stories.tsx
+
+> **CONSTITUTION REQUIREMENT (Principle I)**: Every React component MUST have a Storybook story that documents props, visual states, and provides interactive controls. Agents MUST automatically generate stories when creating components.
+
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
 ---
@@ -117,6 +123,11 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] T022 [US2] Implement [endpoint/feature] in src/[location]/[file].py
 - [ ] T023 [US2] Integrate with User Story 1 components (if needed)
 
+**📚 Component Documentation (REQUIRED for React/UI components)**:
+- [ ] T024 [P] [US2] Create Storybook story for [Component] in src/[path]/[Component].stories.tsx
+
+> **CONSTITUTION REQUIREMENT (Principle I)**: Every React component MUST have a Storybook story.
+
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
 ---
@@ -137,6 +148,11 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] T026 [P] [US3] Create [Entity] model in src/models/[entity].py
 - [ ] T027 [US3] Implement [Service] in src/services/[service].py
 - [ ] T028 [US3] Implement [endpoint/feature] in src/[location]/[file].py
+
+**📚 Component Documentation (REQUIRED for React/UI components)**:
+- [ ] T029 [P] [US3] Create Storybook story for [Component] in src/[path]/[Component].stories.tsx
+
+> **CONSTITUTION REQUIREMENT (Principle I)**: Every React component MUST have a Storybook story.
 
 **Checkpoint**: All user stories should now be independently functional
 
