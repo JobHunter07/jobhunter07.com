@@ -1,3 +1,5 @@
 node_modules
 .vs*
 
+.github/prompts/speckit.clarify.prompt.md
+.specify/memory/constitution.md
