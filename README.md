@@ -95,3 +95,5 @@ Proprietary — all rights reserved by JobHunter07.
 
   Run `npm run dev` to start the development server.
   
+  
+https://speckit.org/
