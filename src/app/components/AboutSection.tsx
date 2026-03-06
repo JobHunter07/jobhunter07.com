@@ -39,9 +39,9 @@ export function AboutSection() {
               Quick Links
             </h3>
             <ul className="text-[#c5c2b5] text-sm space-y-2" style={{ fontFamily: 'Inter, sans-serif' }}>
-              <li><a href="#" className="hover:text-[#d17d47] transition-colors">Privacy Policy</a></li>
+              <li><a href="https://docs.jobhunter07.com/docs/legal/privacy-policy" className="hover:text-[#d17d47] transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-[#d17d47] transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-[#d17d47] transition-colors">FAQ</a></li>
+              <li><a href="https://docs.jobhunter07.com/docs/about/faq" className="hover:text-[#d17d47] transition-colors">FAQ</a></li>
               <li><a href="#" className="hover:text-[#d17d47] transition-colors">Support</a></li>
             </ul>
           </div>
@@ -51,9 +51,10 @@ export function AboutSection() {
               Connect
             </h3>
             <div className="flex gap-4 mb-4">
-              <Facebook className="w-5 h-5 md:w-6 md:h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" />
-              <Twitter className="w-5 h-5 md:w-6 md:h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 md:w-6 md:h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" />
+              {/* <Twitter className="w-5 h-5 md:w-6 md:h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" /> */}
+              <a href="https://www.linkedin.com/company/jobhunter07" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <Linkedin className="w-5 h-5 md:w-6 md:h-6 text-[#c5c2b5] hover:text-[#d17d47] cursor-pointer transition-colors" />
+              </a>
             </div>
             <p className="text-[#c5c2b5] text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
               Follow us for daily tips and insights
