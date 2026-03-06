@@ -1,4 +1,4 @@
 node_modules
 .vs*
 dist
-storybook-static/*
+storybook-static

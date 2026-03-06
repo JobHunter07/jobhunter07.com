@@ -47,6 +47,15 @@ export function Header() {
           <Link to="/about" className="text-[#f5f3ed] hover:text-[#d17d47] transition-colors drop-shadow-md" style={{ fontFamily: 'Inter, sans-serif' }}>
             About
           </Link>
+
+          <Link to="https://docs.jobhunter07.com/" className="text-[#f5f3ed] hover:text-[#d17d47] transition-colors drop-shadow-md" style={{ fontFamily: 'Inter, sans-serif' }}>
+            Docs
+          </Link>
+
+           <Link to="https://docs.jobhunter07.com/blog" className="text-[#f5f3ed] hover:text-[#d17d47] transition-colors drop-shadow-md" style={{ fontFamily: 'Inter, sans-serif' }}>
+            Blog
+          </Link>
+
           <Link to="/contact" className="text-[#f5f3ed] hover:text-[#d17d47] transition-colors drop-shadow-md" style={{ fontFamily: 'Inter, sans-serif' }}>
             Contact
           </Link>
